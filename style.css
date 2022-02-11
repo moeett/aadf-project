@@ -1,0 +1,657 @@
+@font-face { 	
+    font-family: 'poppins-bold';
+    src: url('font/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url('font/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('font/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('font/OpenSans-VariableFont.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin: auto;
+}
+
+/*women in analytics*/
+
+#text-activite h1{
+font-family: 'poppins-bold';
+font-weight: bold;
+font-size: 36px;
+color: #37292A;
+}
+
+#text-activite p{
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+color:#37292A;
+}
+
+#text-activite span{
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 45px;
+color: #37292A;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:blanchedalmond; */
+    justify-content: center; 
+    gap: 70px;
+    padding-inline: 70px;
+}
+
+.video{
+    position: relative;
+}
+
+.video img {
+    margin-top: 0px;
+}
+
+#women-title h1 {
+    font-family: 'poppins-bold';
+    font-size: 26px;
+    color: #37292A;
+}
+
+#women-title p {
+    font-family: 'open-sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #37292A;
+    margin-bottom: 50px;
+}
+
+#women-title span {
+    font-family: 'poppins-bold';
+    font-size: 18px;
+    color: #37292A;
+}
+
+#women-title {
+    padding-top: 175px;
+    padding-inline: 70px;
+    padding-bottom: 25px;
+}
+
+.woman-img{
+    width: 327px;
+    height: 186px;
+    border-radius: 8px;
+}
+
+.play{
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    width: 64px;
+    height: 46px;
+}
+
+.women-videos {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-video-women {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.text-video-women h2 {
+    font-family: 'poppins-bold';
+    font-size: 24px;
+    color: #37292A;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.text-video-women p {
+    font-family: 'open-sans';
+    font-weight: 600;
+    font-size: 18px;
+    color: #37292A;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.text-video{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-video h1{
+    font-family: 'poppins-bold';
+    font-size: 28px;
+    color: #37292A;
+    text-align: center;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.text-video span{
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #37292A;
+text-align: center;
+}
+
+.paragraphe-activites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+
+} 
+
+.paragraphe-remerciements-videos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-block: 70px;
+}
+
+.paragraphe-remerciements-videos p {
+    font-family: 'open-sans';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #37292A;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.paragraphe-activites span{
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+color: #37292A;
+margin-top: 50px;
+}
+
+.remercie {
+    padding-inline: 70px;
+}
+
+.remercie p{
+font-family: 'open-sans';
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #37292A;
+margin-bottom: 0px;
+}
+
+.video-team{
+    display: flex;
+    flex-wrap:wrap;
+    /* background-color:blanchedalmond; */
+    justify-content: center; 
+    gap: 70px;
+    padding-bottom: 50px;
+    padding-inline: 70px;
+}
+
+#montage-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-inline: 70px;
+}
+
+.team-montage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-montage p {
+    font-family: 'open-sans';
+    font-weight: 500;
+    font-size: 24px;
+    color: #37292A;
+    margin-bottom: 0px;
+    margin-top: 18px;
+}
+
+.btn-voir-activite{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center; 
+    
+}
+
+.btn-voir-activite button{
+background-color:  #E41D30;
+border: none;
+color: white;
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px;
+font-size: 18px;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.4s ease;
+width: 327px;
+height: 40px;
+border-radius: 8px;
+}
+
+/* .footer{
+    
+    width: 100%;
+    min-height: 200px;
+    background: #37292A;
+}
+
+.logo-side img{
+    margin-left: 24px;
+}
+
+.logo-side p{
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+color: #F3F3F3;
+} */
+
+/* .condition{
+    display: flex;
+    flex-wrap:wrap;
+} */
+
+/* #mentions{
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+margin-bottom: 2px;
+font-size: 14px;
+line-height: 19px;
+color: #FFFFFF;
+
+}
+
+#cond-general{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    bottom: 2px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF; 
+} */
+
+
+/* page activites*/
+
+.content-activite{
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* background-color:blanchedalmond; */
+    justify-content: center; 
+    gap: 70px;
+    padding-inline: 70px;
+    z-index: 0;
+}
+
+#text-activite{
+    padding-block: 50px;
+    padding-inline: 70px;
+    padding-top: 175px;
+}
+
+.activite-img {
+    width: 615px;
+    height: 352px;
+}
+
+.img-button {
+    position: relative;
+}
+
+.btn-savoir-plus-activite{
+    position: absolute;
+    background-color: rgba(243, 243, 243, 0.6);
+    width: 355px;
+    height: 47px;
+    bottom: 50px;
+    left: 130px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-savoir-plus-activite span{
+    font-family: 'open-sans';
+    font-weight: 600;
+    font-size: 18px;
+    color: #37292A;
+}
+
+.btn-savoir-plus-activite span a{
+    text-decoration: none;
+}
+
+@media all and (max-width: 700px){
+
+    .activite-img{
+        width: 327px;
+        height: 186px;
+        border-radius: 8px;
+}
+
+.btn-savoir-plus-activite{
+    display: none;
+}
+
+#text-activite {
+    padding-top: 125px;
+    padding-bottom: 25px;
+    padding-inline: 24px;
+}
+
+#text-activite h1 {
+    font-size: 26px;
+}
+
+.content-activite {
+    gap: 25px;
+}
+
+.text-video h1 {
+    font-size: 18px;
+}
+
+}
+
+
+/* Qui sommes nous */
+
+#qui-sommes-nous-title {
+    padding-top: 175px;
+    padding-bottom: 50px;
+    padding-inline: 70px;
+}
+
+#qui-sommes-nous-title h1 {
+    margin-bottom: 0px;
+    color: #37292A;
+}
+
+.content-qui-somme-nous{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:blanchedalmond; */
+    justify-content: center; 
+    gap: 20px;
+    padding-inline: 70px;
+}
+
+#qui-sommes-nous-aadf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#qui-sommes-nous-aadf p {
+    font-family: 'open-sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#qui-sommes-nous-aadf h1 {
+    font-family: 'poppins-semibold';
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 500px;
+    color: #37292A;
+}
+
+#qui-sommes-nous-objectifs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+#qui-sommes-nous-objectifs h1 {
+    font-family: 'poppins-semibold';
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 500px;
+    color: #37292A;
+}
+
+#qui-sommes-nous-objectifs p {
+    font-family: 'open-sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.text-video{
+    font-family: 'open-sans';
+    font-weight: 400;
+    font-size: 18px;
+    color: #37292A;
+    margin-top: 18px;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-qui-somme-nous{
+    position: relative;
+    display: flex;
+    padding-block: 50px;
+    width: 100%;
+}
+
+.images-qui-sommes-nous {
+    display: flex;
+    gap: 25px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.quisommenous-img{
+    border-radius: 8px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#text-qui-somme-nous {
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+color: #37292A;
+
+}
+
+.second-part {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-inline: 70px;
+}
+
+.second-part h2 {
+    font-family: 'poppins-bold';
+    font-weight: 600;
+    font-size: 36px;
+    color: #37292A;
+    margin-bottom: 25px;
+}
+
+.second-part p {
+    font-family: 'open-sans';
+    font-weight: 400;
+    font-size: 18px;
+    color: #37292A;
+}
+
+.composition-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 50px;
+    margin-block: 50px;
+    padding-inline: 70px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+}
+
+.team h2 {
+    font-family: 'poppins-bold';
+    font-size: 28px;
+    color: #37292A;
+    margin-block: 18px;
+}
+
+.team p {
+    font-family: 'open-sans';
+    font-size: 24px;
+    font-weight: 600;
+    color: #37292A;
+    margin-bottom: 0px;
+}
+
+        
+
+@media all and (max-width: 1024px){
+    .content-qui-somme-nous {
+        padding-inline: 24px;
+    }
+
+    #women-title {
+        padding-top: 125px;
+        padding-inline: 24px;
+    }
+
+    #text-activite {
+        padding-top: 125px;
+        padding-inline: 24px;
+    }
+
+    #qui-sommes-nous-title {
+        padding-inline: 24px;
+        padding-top: 125px;
+    }
+
+    .image-qui-somme-nous{
+        position: relative;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #qui-sommes-nous-aadf {
+        margin-left: 0px;
+    }
+
+    #qui-sommes-nous-aadf h1 {
+        font-size: 20px;
+        font-family: 'poppins-bold';
+    }
+
+    #qui-sommes-nous-aadf p {
+        font-size: 16px;
+    }
+
+    #qui-sommes-nous-objectifs h1 {
+        font-size: 20px;
+        font-family: 'poppins-bold';
+    }
+
+    #qui-sommes-nous-objectifs p {
+        font-size: 16px;
+    }
+
+    .second-part {
+        padding-inline: 24px;
+    }
+
+    .second-part h2 {
+        font-size: 20px;
+    }
+
+    .second-part p {
+        font-size: 14px;
+    }
+
+    .team img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .team h2 {
+        font-size: 16px;
+    }
+
+    .team p {
+        font-size: 12px;
+    }
+}
