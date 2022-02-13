@@ -44,6 +44,7 @@ font-family: 'poppins-bold';
 font-weight: bold;
 font-size: 36px;
 color: #37292A;
+margin-bottom: 0px;
 }
 
 #text-activite p{
@@ -65,16 +66,20 @@ color: #37292A;
 }
 
 .content{
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    /* background-color:blanchedalmond; */
     justify-content: center; 
     gap: 70px;
     padding-inline: 70px;
+    width: 100%;
 }
 
 .video{
     position: relative;
+    width: 50%;
+    min-width: fit-content;
+    max-width: 615px;
 }
 
 .video img {
@@ -108,22 +113,30 @@ color: #37292A;
 }
 
 .woman-img{
-    width: 327px;
-    height: 186px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 615px;
+    min-width: 300px;
     border-radius: 8px;
 }
 
 .play{
     position: absolute;
-    top: 70px;
-    left: 130px;
-    width: 64px;
-    height: 46px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 64px;
+    width: 100%;
+    height: auto;
 }
 
 .women-videos {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    min-width: fit-content;
+    max-width: 615px;
 }
 
 .text-video-women {
@@ -210,7 +223,7 @@ color: #37292A;
 margin-top: 50px;
 }
 
-.remercie {
+.text-remerci {
     padding-inline: 70px;
 }
 
@@ -228,9 +241,10 @@ margin-bottom: 0px;
     flex-wrap:wrap;
     /* background-color:blanchedalmond; */
     justify-content: center; 
-    gap: 70px;
+    gap: 50px;
     padding-bottom: 50px;
-    padding-inline: 70px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #montage-video {
@@ -246,6 +260,16 @@ margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 25%;
+    max-width: 200px;
+    min-width: fit-content;
+}
+
+.team-montage img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    min-width: 110px;
 }
 
 .team-montage p {
@@ -332,12 +356,32 @@ color: #FFFFFF;
 .content-activite{
     display: flex;
     flex-wrap: wrap;
-    
-    /* background-color:blanchedalmond; */
-    justify-content: center; 
+    justify-content: space-between; 
+    width: 100%;
     gap: 70px;
     padding-inline: 70px;
     z-index: 0;
+    padding-bottom: 50px;
+}
+
+.content-activite a {
+    width: 45%;
+    max-width: 615px;
+    min-width: 300px;
+}
+
+.image-activite {
+    width: 45%;
+    max-width: 615px;
+    min-width: 300px;
+}
+
+.image-activite h1 {
+    margin-bottom: 0px;
+}
+
+a .image-activite {
+    width: 100%;
 }
 
 #text-activite{
@@ -347,21 +391,30 @@ color: #FFFFFF;
 }
 
 .activite-img {
-    width: 615px;
-    height: 352px;
+    width: 100%;
+    height: auto;
+    max-width: 615px;
+    min-width: 300px;
 }
 
 .img-button {
     position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 615px;
+    min-width: 300px;
 }
 
 .btn-savoir-plus-activite{
     position: absolute;
     background-color: rgba(243, 243, 243, 0.6);
-    width: 355px;
-    height: 47px;
+    width: auto;
+    max-width: 355px;
     bottom: 50px;
-    left: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-inline: 16px;
+    padding-block: 8px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -380,28 +433,35 @@ color: #FFFFFF;
 
 @media all and (max-width: 700px){
 
-    .activite-img{
-        width: 327px;
-        height: 186px;
-        border-radius: 8px;
+    .content-activite {
+        justify-content: center;
+    }
 }
+
+@media all and (max-width: 1024px){
 
 .btn-savoir-plus-activite{
     display: none;
 }
 
+.text-remerci {
+    padding-inline: 24px;
+}
+
 #text-activite {
-    padding-top: 125px;
+    padding-top: 100px;
     padding-bottom: 25px;
     padding-inline: 24px;
 }
 
 #text-activite h1 {
     font-size: 26px;
+    margin-bottom: 0px;
 }
 
 .content-activite {
     gap: 25px;
+    padding-inline: 24px;
 }
 
 .text-video h1 {
@@ -429,7 +489,7 @@ color: #FFFFFF;
     flex-wrap: wrap;
     /* background-color:blanchedalmond; */
     justify-content: center; 
-    gap: 20px;
+    gap: 100px;
     padding-inline: 70px;
 }
 
@@ -437,7 +497,7 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 50px;
+    margin-right: 50px;
     flex-grow: 1;
     width: 100%;
 }
@@ -461,7 +521,7 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 50px;
+    margin-left: 50px;
     width: 100%;
     flex-grow: 1;
 }
@@ -494,7 +554,6 @@ color: #FFFFFF;
 .image-qui-somme-nous{
     position: relative;
     display: flex;
-    padding-block: 50px;
     width: 100%;
 }
 
@@ -580,11 +639,53 @@ color: #37292A;
     margin-bottom: 0px;
 }
 
-        
+@media all and (max-width: 1440px){
+    .video {
+        max-width: 400px;
+    }
+
+    .woman-img {
+        max-width: 400px;
+    }
+
+    .women-videos {
+        max-width: 400px;
+    }
+}
+
 
 @media all and (max-width: 1024px){
     .content-qui-somme-nous {
         padding-inline: 24px;
+    }
+
+    .images-qui-sommes-nous {
+        min-width: 150px;
+        width: 100%;
+    }
+
+    #qui-sommes-nous-title{
+        padding-top: 100px;
+        padding-bottom: 25px;
+        padding-inline: 24px;
+    }
+
+    .quisommenous-img {
+        max-width: 250px;
+        min-width: 150px;
+        width: 100%;
+    }
+
+    .video {
+        max-width: 400px;
+    }
+
+    .woman-img {
+        max-width: 400px;
+    }
+
+    .women-videos {
+        max-width: 400px;
     }
 
     #women-title {
@@ -593,13 +694,8 @@ color: #37292A;
     }
 
     #text-activite {
-        padding-top: 125px;
+        padding-top: 100px;
         padding-inline: 24px;
-    }
-
-    #qui-sommes-nous-title {
-        padding-inline: 24px;
-        padding-top: 125px;
     }
 
     .image-qui-somme-nous{
@@ -608,8 +704,12 @@ color: #37292A;
         gap: 25px;
     }
 
+    #who-aadf {
+        flex-direction: column-reverse;
+    }
+
     #qui-sommes-nous-aadf {
-        margin-left: 0px;
+        margin-right: 0px;
     }
 
     #qui-sommes-nous-aadf h1 {
@@ -619,6 +719,10 @@ color: #37292A;
 
     #qui-sommes-nous-aadf p {
         font-size: 16px;
+    }
+
+    #qui-sommes-nous-objectifs {
+        margin-left: 0px;
     }
 
     #qui-sommes-nous-objectifs h1 {
