@@ -12,3 +12,13 @@ closeMenu.addEventListener("click", function(){
     mobileMenu.style.transform = "translateX(100%)";
     goUp.style.display = "flex";
 })
+
+
+window.addEventListener("scroll", function(){
+    if (window.scrollY > 0) {
+        goUp.style.display = "flex";
+    }
+    else {
+        goUp.style.display = "none";
+    }
+})
